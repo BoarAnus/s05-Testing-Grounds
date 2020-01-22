@@ -26,6 +26,7 @@ ANPCCharacter::ANPCCharacter()
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationRoll = false;
 
+
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = true; // Character moves in the direction of input...	
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f, 0.0f); // ...at this rotation rate
@@ -75,6 +76,7 @@ void ANPCCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInput
 	// VR headset functionality
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &ANPCCharacter::OnResetVR);
 }
+
 
 
 void ANPCCharacter::OnResetVR()

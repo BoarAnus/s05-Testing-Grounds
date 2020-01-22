@@ -11,6 +11,7 @@ class ANPCCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
+	
 	/** Camera boom positioning the camera behind the character */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class USpringArmComponent* CameraBoom;
@@ -62,6 +63,7 @@ protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	// End of APawn interface
+
 
 public:
 	/** Returns CameraBoom subobject **/
